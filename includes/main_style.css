@@ -1,6 +1,6 @@
 
 .form-container {
-    margin-top: 25%; /* Adds a space above the form */
+    margin-top: 10%; /* Adds a space above the form */
     width: 40%; /* Sets form container width */
 }
 
@@ -13,7 +13,7 @@
 
 @media screen and (min-width: 1200px) {
     .form-container {
-        margin-top: 10%; /* Reduces the space above the form */
+        margin-top: 5%; /* Reduces the space above the form */
         width: 30%; /* Sets form container width to 30% */
     }
 }
