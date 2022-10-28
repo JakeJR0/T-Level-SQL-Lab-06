@@ -17,9 +17,17 @@
         <meta property="og:description" content="<?php echo SITE_DESCRIPTION; ?>">
         <meta property="og:title" content="<?php echo SITE_NAME; ?>">
 
-        <!-- CSS only -->
+        <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        
+        <!-- Bootstrap JS -->
+
+        <script defer src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        
         <!-- Custom CSS -->
         <link rel="stylesheet" href="includes/main_style.css">
+
     </head>
 </html>
