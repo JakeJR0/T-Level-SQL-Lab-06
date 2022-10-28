@@ -1,4 +1,4 @@
-# T-Level PHP Lab 03
+# T-Level PHP - SQL Lab 06
 
 ## Introduction
 
