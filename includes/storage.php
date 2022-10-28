@@ -23,6 +23,7 @@ $courses = "
         course_name VARCHAR(255) NOT NULL
     );
 ";
+
 $levels = "
     CREATE TABLE IF NOT EXISTS course_levels(
         ID INT PRIMARY KEY AUTO_INCREMENT,

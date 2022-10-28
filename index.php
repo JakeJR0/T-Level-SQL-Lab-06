@@ -9,29 +9,31 @@ session_start();
         <?php include 'includes/header.php'; ?>
     </head>
     <body>
-        <!-- Header -->
+        <!-- Navigation Bar -->
         <?php include 'includes/navbar.php' ?>
-        <!-- End Header -->
-
         <!-- Main -->
         <main>
+            <!-- Header -->
             <header class="text-center" style="margin-top: 10px;">
                 <?php
+                    # Checks if the user is logged in
                     if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == true) {
                 ?>
+                <!-- User Message -->
                 <h1 class="display-4">
                     Welcome <?php echo $_SESSION['first_name']; ?>
                 </h1>
-                <lead>
+                <lead class="lead">
                     You are logged in.
                 </lead>
                 <?php 
                 } else {
                 ?>
+                <!-- Guest Message -->
                 <h1 class="display-4">
                     Welcome to the Student Portal
                 </h1>
-                <lead>
+                <lead class="lead">
                     Please login or enrol to continue.
                 </lead>
                 <?php
