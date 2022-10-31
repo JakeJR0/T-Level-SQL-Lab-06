@@ -27,7 +27,10 @@
         <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
         
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="includes/main_style.css">
+        <link rel="stylesheet" href="includes/css/main_style.css">
 
+        <!-- Custom JS -->
+
+        <script defer src="includes/js/form_validation.js"></script>
     </head>
 </html>
