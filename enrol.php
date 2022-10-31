@@ -156,32 +156,32 @@ function DisplayCourseForm($courses) {
         <!-- Form Container -->
         <div class="container form-container">
             <!-- Form -->
-            <form action="" method="POST">
+            <form id="enrolment-form" action="" method="POST">
                 <!-- First Name -->
                 <div class="form-group mb-3">
                     <label for="first_name">First Name</label>
                     
-                    <input pattern="[A-z]{4,20}" class="form-control" type="text" name="first_name" id="first_name" value="<?php echo $_SESSION['first_name'] ?? ''; ?>">
+                    <input required pattern="[A-z]{4,20}" class="form-control" type="text" name="first_name" id="first_name" value="<?php echo $_SESSION['first_name'] ?? ''; ?>">
                 </div>
                 <!-- Last Name -->
                 <div class="form-group mb-3">
                     <label for="last_name">Last Name</label>
-                    <input pattern="[A-z\-]{6,30}" class="form-control" type="text" name="last_name" id="last_name" value="<?php echo $_SESSION['last_name'] ?? ''; ?>">
+                    <input required pattern="[A-z\-]{4,30}" class="form-control" type="text" name="last_name" id="last_name" value="<?php echo $_SESSION['last_name'] ?? ''; ?>">
                 </div>
                 <!-- Email -->
                 <div class="form-group mb-3">
                     <label for="email">Email</label>
-                    <input class="form-control" type="email" name="email" id="email" value="<?php echo $_SESSION['email'] ?? ''; ?>">
+                    <input required class="form-control" type="email" name="email" id="email" value="<?php echo $_SESSION['email'] ?? ''; ?>">
                 </div>
                 <!-- Password -->
                 <div class="form-group mb-3">
                     <label for="password">Password</label>
-                    <input class="form-control" type="password" name="password" id="password">
+                    <input required class="form-control" pattern="[A-z-0-9.^&*%]{8,}" type="password" name="password" id="password">
                 </div>
                 <!-- Phone -->
                 <div class="form-group mb-3">
                     <label for="phone">Phone</label>
-                    <input pattern="[0-9]{11}" class="form-control" type="tel" name="phone" id="phone" value="<?php echo $_SESSION['phone'] ?? ''; ?>">
+                    <input required pattern="[0-9]{11}" class="form-control" type="tel" name="phone" id="phone" value="<?php echo $_SESSION['phone'] ?? ''; ?>">
                 </div>
                 <!-- Course -->
                 <div class="mb-3">
@@ -209,7 +209,7 @@ function DisplayCourseForm($courses) {
                     <!-- Form Feedback Label -->
                     <label for="feedback">Form Feedback</label>
                     <!-- Form Feedback Input -->
-                    <input class="form-control" type="text" maxlength="255" minlength="30" name="feedback" id="feedback" value="<?php echo $_SESSION['feedback'] ?? ''; ?>">
+                    <input required class="form-control" type="text" maxlength="255" minlength="30" name="feedback" id="feedback" value="<?php echo $_SESSION['feedback'] ?? ''; ?>">
                 </div>
                 <!-- Timestamp (Hidden) -->
                 <input id="form-time" style="display: none;" type="text" name="timestamp" value="1">
