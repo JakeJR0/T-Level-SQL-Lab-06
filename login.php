@@ -100,12 +100,12 @@ function DisplayLogin() {
                 <!-- Student ID -->
                 <div class="form-group mb-3">
                     <label for="student_id">Student ID:</label>
-                    <input pattern="[0-9]{7}" class="form-control" type="text" name="student_id" id="student_id">
+                    <input required pattern="[0-9]{7}" class="form-control" type="text" name="student_id" id="student_id">
                 </div>
                 <!-- Password -->
                 <div class="form-group mb-3">
                     <label for="password">Password:</label>
-                    <input class="form-control" type="password" name="password" id="password">
+                    <input required pattern="[A-z-0-9.^&*%]{8,}" class="form-control" type="password" name="password" id="password">
                 </div>
                 <!-- Submit Button -->
                 <button class="btn btn-primary" style="width:100%; margin-top:30px;" type="submit">Submit</button>
